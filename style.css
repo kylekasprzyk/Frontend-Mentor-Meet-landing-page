@@ -24,6 +24,7 @@
     --fs-28px: 1.75rem;
     --fs-32px: 2rem;
     --fs-40px: 2.5rem;
+    --fs-48px: 3rem;
     --fs-64px: 4rem;
 
     /* font-families */
@@ -310,6 +311,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+    
+    h1 {
+        font-size: var(--fs-48px); 
+    }
 
     .hero-text {
         display: grid;
