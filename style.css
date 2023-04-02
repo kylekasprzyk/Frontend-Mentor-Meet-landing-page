@@ -457,6 +457,10 @@ main {
         padding: 0 3rem;
     }
     
+    hr {
+        margin-top: 3.375rem;
+    }
+    
     
     .footer {
         background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/desktop/image-footer.jpg);
