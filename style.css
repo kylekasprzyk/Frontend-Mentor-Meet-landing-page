@@ -57,29 +57,18 @@ body {
     text-align: center;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
+img {
     display: block;
     max-width: 100%;
 }
 
-input,
-button,
-textarea,
-select {
+button {
     font: inherit;
 }
 
 p,
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     overflow-wrap: break-word;
 }
 
@@ -101,17 +90,6 @@ header {
     place-items: center;
     padding-top: 3rem;
     max-width: 90rem;
-}
-
-.group-chat {
-    display: grid;
-    place-items: center;
-}
-
-.background-image-top {
-    padding-top: 3.375rem;
-    display: grid;
-    grid-auto-flow: column;
 }
 
 .desktop-hero-hidden {
@@ -321,14 +299,6 @@ main {
         place-items: center;
     }
 
-    .group-chat {
-        padding: 4.5rem 9.75rem 5rem 9.6875rem;
-    }
-
-    .group-chat h1 {
-        padding: 0 6rem;
-    }
-
     .button-group {
         display: flex;
         place-items: flex-start;
@@ -417,10 +387,6 @@ main {
 
     .image-right {
         order: 1;
-    }
-
-    .group-chat {
-        margin-top: -16.125rem;
     }
 
     .tablet-hero-hidden {
