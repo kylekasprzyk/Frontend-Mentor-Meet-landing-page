@@ -395,6 +395,7 @@ main {
         font-weight: 900;
         font-size: var(--fs-64px);
         line-height: 100%;
+        padding: 0.5rem 1.5rem;
     }
 
     .hero {
