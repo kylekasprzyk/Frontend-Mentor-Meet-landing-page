@@ -432,6 +432,20 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
+    .hero { 
+        display: grid; 
+        grid-template-columns: 1fr 716px 1fr; 
+        place-items: center;
+    }
+    
+    h1 { 
+        font-weight: 900;
+        font-size: var(--fs-64px);
+        line-height: 100%;
+        padding: 0.5rem 8rem;
+    }
+    
+    
     .footer {
         background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/desktop/image-footer.jpg);
         background-repeat: no-repeat;
