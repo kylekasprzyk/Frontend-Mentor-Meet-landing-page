@@ -308,6 +308,25 @@ main {
     text-align: center;
 }
 
+.typing-text {
+    width: 60ch;
+    animation: typing 3500ms steps(60), blink 500ms step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .hero-text {
