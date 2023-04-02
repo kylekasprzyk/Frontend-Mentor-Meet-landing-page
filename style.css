@@ -438,6 +438,14 @@ main {
         place-items: center;
     }
     
+    .image-left {
+        padding-top: 1rem;
+    }
+    
+    .image-right {
+        padding-top: 1rem;
+    }
+    
     h1 { 
         font-weight: 900;
         font-size: var(--fs-64px);
