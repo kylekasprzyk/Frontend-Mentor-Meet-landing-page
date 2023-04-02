@@ -461,6 +461,11 @@ main {
         margin-top: 3.375rem;
     }
     
+    .meeting-images {
+        margin: 3.1875rem 2.5rem 3rem 2.4375rem;
+        gap: 2rem; 
+    }
+    
     
     .footer {
         background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/desktop/image-footer.jpg);
