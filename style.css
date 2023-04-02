@@ -1,0 +1,472 @@
+:root {
+    /* colors */
+    --slate: 192 37% 48%;
+    --dark-purple: 268 34% 53%;
+    --dark-blue: 240 21% 20%;
+    --grey: 240 10% 57%;
+    --bright-blue: 192 90% 77%;
+    --bright-purple: 268 100% 86%;
+    --very-light-grey: 0 0% 98%;
+    --white: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-14px: .875rem;
+    --fs-15px: .9375rem;
+    --fs-16px: 1rem;
+    --fs-17px: 1.0625rem;
+    --fs-18px: 1.125rem;
+    --fs-19px: 1.1875rem;
+    --fs-20px: 1.25rem;
+    --fs-21px: 1.3125rem;
+    --fs-22px: 1.375rem;
+    --fs-23px: 1.4375rem;
+    --fs-24px: 1.5rem;
+    --fs-32px: 2rem;
+    --fs-40px: 2.5rem;
+    --fs-64px: 4rem;
+
+    /* font-families */
+    --ff-red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(var(--very-light-grey));
+    font-family: var(--ff-red-hat-display);
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+header {
+    display: grid;
+    place-items: center;
+    padding-top: 3rem;
+    max-width: 90rem;
+}
+
+.group-chat {
+    display: grid;
+    place-items: center;
+}
+
+.background-image-top {
+    padding-top: 3.375rem;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.desktop-hero-hidden {
+    display: none;
+}
+
+.hero {
+    margin-top: 3.375rem;
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    padding-top: 3rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: var(--fs-28px);
+    line-height: 110%;
+    color: hsl(var(--dark-blue));
+}
+
+p {
+    font-weight: 500;
+    font-size: var(--fs-16px);
+    line-height: 162%;
+    color: hsl(var(--grey));
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.button-group {
+    display: grid;
+    place-items: center;
+}
+
+.btn-download {
+    height: 3.625rem;
+    width: 12.0625rem;
+    border-radius: 1.8125rem;
+    background-color: hsl(var(--slate));
+    border: none;
+    font-weight: 900;
+    font-size: var(--fs-16px);
+    line-height: 162%;
+    color: hsl(var(--white));
+    margin-bottom: 1rem;
+    padding-top: .3125rem;
+}
+
+.version-blue {
+    color: hsl(var(--bright-blue));
+}
+
+.btn-download:hover {
+    cursor: pointer;
+    background-color: #71C0D4;
+}
+
+.btn-what-is-it {
+    height: 3.625rem;
+    width: 8.6875rem;
+    border-radius: 1.8125rem;
+    background-color: hsl(var(--dark-purple));
+    border: none;
+    font-weight: 900;
+    font-size: var(--fs-16px);
+    line-height: 162%;
+    color: hsl(var(--white));
+    padding-top: .3125rem;
+}
+
+.btn-what-is-it:hover {
+    cursor: pointer;
+    background-color: #B18BDD;
+}
+
+hr {
+    height: 5.25rem;
+    width: .0625rem;
+    left: 1.6875rem;
+    top: -0.0002rem;
+    border-radius: 0;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    border: .0625rem solid #87879D;
+    margin-top: 4rem;
+
+}
+
+.number-circle {
+    display: grid;
+    place-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: .0625rem solid rgba(135, 135, 157, 0.25);
+    border-radius: 1.8125rem;
+    font-weight: 900;
+    font-size: var(--fs-16px);
+    line-height: 162%;
+    color: hsl(var(--grey));
+    margin: 0;
+    background-color: hsl(var(--very-light-grey));
+}
+
+.meeting-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 1.5rem;
+    gap: 1.5rem;
+}
+
+.rounded-images {
+    border-radius: .625rem;
+}
+
+.uppercase {
+    font-weight: 900;
+    font-size: var(--fs-16px);
+    line-height: 162%;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: hsl(var(--slate));
+}
+
+h2 {
+    font-weight: 900;
+    font-size: var(--fs-32px);
+    line-height: 112%;
+    color: hsl(var(--dark-blue));
+    margin: 0 1.5rem;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    z-index: 100;
+    max-width: 90rem;
+}
+
+.h2-very-light-grey {
+    font-weight: 900;
+    font-size: var(--fs-32px);
+    line-height: 112%;
+    color: hsl(var(--very-light-grey));
+    margin: 0 1.5rem;
+    padding-top: 5.75rem;
+}
+
+.p-very-light-grey {
+    font-weight: 500;
+    font-size: var(--fs-12px);
+    line-height: 144%;
+    color: hsl(var(--very-light-grey));
+}
+
+.btn-purple {
+    background-color: hsl(var(--dark-purple));
+}
+
+.btn-purple:hover {
+    cursor: pointer;
+    background-color: #B18BDD;
+}
+
+.version-purple {
+    color: hsl(var(--bright-purple));
+}
+
+.attribution {
+    color: hsl(var(--very-light-grey));
+}
+
+.attribution a {
+    color: hsl(var(--bright-purple));
+}
+
+.footer {
+    background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1.75rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attribution p {
+    font-weight: 500;
+    font-size: var(--fs-14px);
+    color: hsl(var(--very-light-grey));
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-text {
+        display: grid;
+        place-items: center;
+    }
+
+    .group-chat {
+        padding: 4.5rem 9.75rem 5rem 9.6875rem;
+    }
+
+    .group-chat h1 {
+        padding: 0 6rem;
+    }
+
+    .button-group {
+        display: flex;
+        place-items: flex-start;
+    }
+
+    .btn-what-is-it {
+        margin-left: 1rem;
+    }
+
+    hr {
+        margin-top: 0;
+    }
+
+    .meeting-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 4.1875rem 2.5rem 3rem 2.4375rem;
+        gap: .6875rem;
+        max-width: 69.375rem;
+    }
+
+    .smarter-meetings {
+        margin: 0 4rem;
+    }
+
+    .smarter-meetings h2 {
+        padding: 0 8rem;
+    }
+
+    .hr-2 {
+        margin-top: 3rem;
+    }
+
+    .h2-very-light-grey {
+        padding: 1rem 6rem;
+    }
+
+    .footer {
+        background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/tablet/image-footer.jpg);
+        padding-top: 5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        padding: 0 4.625rem;
+    }
+
+    .footer br {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+        padding-top: 5rem;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: var(--fs-64px);
+        line-height: 100%;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .hero-text {
+        display: grid;
+        place-items: center;
+    }
+
+    .image-right {
+        order: 1;
+    }
+
+    .group-chat {
+        margin-top: -16.125rem;
+    }
+
+    .tablet-hero-hidden {
+        display: none;
+    }
+
+    .desktop-hero-hidden {
+        display: block;
+    }
+
+    .smarter-meetings p {
+        padding: 0 4rem;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .footer {
+        background-image: linear-gradient(hsl(var(--slate) / .9), hsl(var(--slate) / .9)), url(./assets/desktop/image-footer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 7.1875rem .625rem 6.25rem;
+        width: 100%;
+        height: 19.25rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .footer-text {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 0;
+        place-items: center;
+        width: 69.375rem;
+        text-align: left;
+    }
+
+    .h2-very-light-grey {
+        padding: 0;
+        text-align: start;
+    }
+
+    .smarter-meetings {
+        margin: 0 25rem;
+    }
+
+    .smarter-meetings p {
+        padding: 0 0;
+    }
+}
