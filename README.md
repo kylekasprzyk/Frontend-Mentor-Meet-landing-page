@@ -3,7 +3,7 @@
   <h2>
     <a href="https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR"><strong>Frontend Mentor Challenge</strong></a>  </h2>
     <p>
-    <a href="#">My Solution</a>
+    <a href="https://kylekasprzyk.github.io/Frontend-Mentor-Meet-landing-page/">My Solution</a>
   </p>
 </div>
 
@@ -27,7 +27,7 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 - [Solution URL](#)
 
-- [Live Site URL](#)
+- [Live Site URL](https://kylekasprzyk.github.io/Frontend-Mentor-Meet-landing-page/)
 
 ## Built with
 
