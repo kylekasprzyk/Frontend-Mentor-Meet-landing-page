@@ -157,7 +157,7 @@ p {
     line-height: 162%;
     color: hsl(var(--white));
     margin-bottom: 1rem;
-    padding-top: .3125rem;
+/*     padding-top: .3125rem; */
 }
 
 .version-blue {
@@ -179,7 +179,7 @@ p {
     font-size: var(--fs-16px);
     line-height: 162%;
     color: hsl(var(--white));
-    padding-top: .3125rem;
+/*     padding-top: .3125rem; */
 }
 
 .btn-what-is-it:hover {
